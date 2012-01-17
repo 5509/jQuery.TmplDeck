@@ -4,6 +4,7 @@
  * JSDeferred.js required
  *
  * @forked    : Kazunori Tokuda (norimania[at]gmail.com)
+ * @link      : https://github.com/5509/jQuery.TmplDeck
  * @modified  : 2012/01/17
  *
  * Based on jQuery.TmplDeck
