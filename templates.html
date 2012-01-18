@@ -28,4 +28,14 @@ templateFragmentId3 {{{
 	</div>
 }}}
 
+templateFragmentId4 {{{
+	<div class="block">
+		<% _.each(items, function(item, i) { %>
+			<p style="background: <% if ( item.sex === 'female' ) { %>#f00<%  } else { %>#00f<% } %>">
+				<%- item.name %>
+			</p>
+		<% }); %>
+	</div>
+}}}
+
 " vim: set foldmarker=marker

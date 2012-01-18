@@ -31,8 +31,7 @@ deck.load().next(function(){
 	}());
 
 	(function() {
-		var pla
-		eholder3 = document.getElementById('placeholder3');
+		var placeholder3 = document.getElementById('placeholder3');
 		placeholder3.innerHTML = deck.tmpl('templateFragmentId2', {
 			title: 'TITLE de gesu yoooooo',
 			items: [
@@ -40,6 +39,19 @@ deck.load().next(function(){
 				{ title: 'title desu', content: 'content <b>desu</b>' },
 				{ title: 'title desu', content: 'content <b>desu</b>' },
 				{ title: 'title desu', content: 'content <b>desu</b>' }
+			]
+		});
+	}());
+
+	(function() {
+		var placeholder5 = document.getElementById('placeholder5');
+		placeholder5.innerHTML = deck.tmpl('templateFragmentId4', {
+			items: [
+				{ sex: 'male',   name: 'Kiteretsu' },
+				{ sex: 'female', name: 'Miyo' },
+				{ sex: 'male',   name: 'Kouji' },
+				{ sex: 'male',   name: 'Korosuke' },
+				{ sex: 'male',   name: 'Kaoru' }
 			]
 		});
 	}());
@@ -70,6 +82,7 @@ th,td{
 <div id="placeholder2"></div>
 <div id="placeholder3"></div>
 <div id="placeholder4"></div>
+<div id="placeholder5"></div>
 <script>
 /* ready fn test. this call back will be fired as soon as the deck was loaded */
 deck.ready(function(){
